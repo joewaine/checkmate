@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe User do
+<<<<<<< HEAD
   let(:user) {User.create(email: 'ga@ga.com', password: 'a', password_confirmation: 'a')}
 
   describe '.create' do
