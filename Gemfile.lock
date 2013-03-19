@@ -110,12 +110,31 @@ GEM
     method_source (0.8.1)
     mime-types (1.21)
     multi_json (1.7.1)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    nokogiri (1.5.6)
+    nokogiri (1.5.8)
+=======
+<<<<<<< HEAD
+>>>>>>> bad85174dd32d9487e58f73615be32bb171bde83
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
     net-ssh (2.6.6)
     nokogiri (1.5.6)
     nokogiri (1.5.7)
     nokogiri (1.5.8)
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+    nokogiri (1.5.8)
+=======
+    nokogiri (1.5.6)
+>>>>>>> development
+>>>>>>> cfb66f8dd6f48f4dce064c390736d791b8c2bc8b
+>>>>>>> 7a21c9d23c163355ed8374dd82694b8cb37b1b3b
+>>>>>>> bad85174dd32d9487e58f73615be32bb171bde83
     pg (0.14.1)
     polyglot (0.3.3)
     pry (0.9.12)

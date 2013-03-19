@@ -32,4 +32,10 @@ end
 
 group :development do
   gem 'better_errors'
+<<<<<<< HEAD
 end
+=======
+end
+
+
+>>>>>>> bad85174dd32d9487e58f73615be32bb171bde83
