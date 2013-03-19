@@ -5,9 +5,6 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'haml'
 gem 'bcrypt-ruby'
-gem 'carrierwave'
-gem 'fog'
-gem 'rmagick'
 
 group :assets do
   gem 'sass-rails'
