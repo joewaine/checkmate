@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <title>Checkmate</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>checkmate</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id='nav'><%= render :partial => 'layouts/nav' %></div>
+  <div id='body'><%= render :partial => 'layouts/body' %></div>
+  <div id='footer'><%= render :partial => 'layouts/footer' %></div>
 
-<%= yield %>
-
+  <script>
+  $(document).foundation();
+  </script>
 </body>
 </html>
