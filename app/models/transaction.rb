@@ -13,4 +13,6 @@
 #
 
 class Transaction < ActiveRecord::Base
+  attr_accessible :date, :amount, :is_deposit, :to
+  belongs_to :account
 end
