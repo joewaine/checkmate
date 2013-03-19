@@ -3,6 +3,9 @@ class AccountsController < ApplicationController
     @account = Account.new
   end
   def create
-    @account = Account.new(params[:account])
+    Account.create(params[:account])
+    @accounts = Account.order(:name)
+  end
+  def show
   end
 end
