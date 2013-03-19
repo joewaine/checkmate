@@ -11,8 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20130319203005) do
+ActiveRecord::Schema.define(:version => 20130319204247) do
+
+  create_table "accounts", :force => true do |t|
+    t.string   "name"
+    t.decimal  "balance"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "transactions", :force => true do |t|
     t.date     "date"
@@ -20,20 +27,10 @@ ActiveRecord::Schema.define(:version => 20130319203005) do
     t.boolean  "is_deposit"
     t.integer  "account_id"
     t.text     "to"
-=======
-ActiveRecord::Schema.define(:version => 20130319204247) do
-
-  create_table "accounts", :force => true do |t|
-    t.string   "name"
-    t.decimal  "balance"
-    t.integer  "user_id"
->>>>>>> development
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-<<<<<<< HEAD
-=======
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "password_digest"
@@ -41,5 +38,4 @@ ActiveRecord::Schema.define(:version => 20130319204247) do
     t.datetime "updated_at",      :null => false
   end
 
->>>>>>> development
 end

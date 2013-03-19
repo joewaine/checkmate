@@ -1,10 +1,12 @@
 Checkmate::Application.routes.draw do
-<<<<<<< HEAD
   root :to => 'home#index'
-  resources :transactions, :accounts, :users
+  resources :users, :transactions
+  resources :accounts do
+    collection do
+      post :transfer
+    end
+  end
+  get '/login' => 'session#new'
+  post '/login' => 'session#create'
+  delete '/login' => 'session#destroy'
 end
-=======
-
-  root :to => 'home#index'
-  resources :accounts, :users, :transactions
->>>>>>> bad85174dd32d9487e58f73615be32bb171bde83
