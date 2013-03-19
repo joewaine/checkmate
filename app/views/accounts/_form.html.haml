@@ -1,0 +1,10 @@
+.row
+  .large-3.columns
+    = form_for @account, :remote => true do |f|
+      = f.label :name
+      = f.text_field :name, :autofocus => true
+      = f.label :balance
+      = f.number_field :balance
+      = link_to 'Cancel', '#', :'data-clear-form' => true, :class => 'button tiny radius alert'
+      = f.submit nil, :class => 'button tiny radius success'
+  .large-9.columns
