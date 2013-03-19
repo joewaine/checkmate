@@ -1,5 +1,4 @@
 Checkmate::Application.routes.draw do
-
   root :to => 'home#index'
-  resources :transactions
+  resources :accounts, :users, :transactions
 end
