@@ -1,8 +1,13 @@
 %table
   %tr
-    %th Account Name
-    %th Transaction Count
-  - @accounts.each do |account|
+    %th Date
+    %th Amount
+    %th Is_deposit
+    %th to
+  - @transactions.each do |transaction|
     %tr
-      %td= link_to(account.name, account, :class => 'button tiny radius success')
-      %td= account.transactions.count
+      %td= transaction.date
+      %td= transaction.amount
+      %td= transaction.is_deposit
+      %td= transaction.to
+= button_tag 'Chart', :class => 'button radius tiny', :id => 'show_chart'
