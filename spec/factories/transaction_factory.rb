@@ -20,7 +20,6 @@ FactoryGirl.define do
     is_deposit true
   end
 
-
   factory :transaction_withdraw, class: Transaction do
     date  '2009/03/19'
     amount 89.00

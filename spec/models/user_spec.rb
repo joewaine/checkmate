@@ -12,7 +12,7 @@
 require 'spec_helper'
 
 describe User do
-<<<<<<< HEAD
+
   let(:user) {User.create(email: 'ga@ga.com', password: 'a', password_confirmation: 'a')}
 
   describe '.create' do
@@ -23,7 +23,4 @@ describe User do
       user.password_confirmation.should eq 'a'
     end
   end
-<<<<<<< HEAD
 end
-=======
->>>>>>> 935a11dc0d87974fc02ff710933d24e3e3a61ff0

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 935a11dc0d87974fc02ff710933d24e3e3a61ff0
 # == Schema Information
 #
 # Table name: transactions
@@ -16,14 +12,7 @@
 #  updated_at :datetime         not null
 #
 
-<<<<<<< HEAD
-=======
-require 'spec_helper'
 
-describe Transaction do
-  let(:transaction){()}
-  describe '.create' do
-=======
 require 'spec_helper'
 
 describe Transaction do
@@ -38,5 +27,4 @@ describe Transaction do
     end
   end
 end
->>>>>>> cfb66f8dd6f48f4dce064c390736d791b8c2bc8b
->>>>>>> 935a11dc0d87974fc02ff710933d24e3e3a61ff0
+
