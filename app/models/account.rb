@@ -11,5 +11,10 @@
 #
 
 class Account < ActiveRecord::Base
+<<<<<<< HEAD
   attr_accessible :name
+=======
+  attr_accessible :name, :balance
+  has_many :transactions
+>>>>>>> 935a11dc0d87974fc02ff710933d24e3e3a61ff0
 end

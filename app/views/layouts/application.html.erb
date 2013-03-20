@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <title>Checkmate</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>checkmate</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<<<<<<< HEAD
 <%== intellinav %>
 <%= yield %>
 
+=======
+  <div id='nav'><%= render :partial => 'layouts/nav' %></div>
+  <div id='body'><%= render :partial => 'layouts/body' %></div>
+  <div id='footer'><%= render :partial => 'layouts/footer' %></div>
+>>>>>>> 935a11dc0d87974fc02ff710933d24e3e3a61ff0
 </body>
 </html>

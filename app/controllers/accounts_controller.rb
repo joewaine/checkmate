@@ -1,6 +1,13 @@
 class AccountsController < ApplicationController
   def new
-    @account = Account.new
+  end
+
+  def create
+  end
+
+  def show
+    @account = Account.find(params[:id])
+    @transactions = @account.transactions
   end
 
   def create

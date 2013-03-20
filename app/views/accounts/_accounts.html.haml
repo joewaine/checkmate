@@ -1,0 +1,13 @@
+%table
+  %tr
+    %th Date
+    %th Amount
+    %th Is_deposit
+    %th to
+  - @transactions.each do |transaction|
+    %tr
+      %td= transaction.date
+      %td= transaction.amount
+      %td= transaction.is_deposit
+      %td= transaction.to
+= button_tag 'Chart', :class => 'button radius tiny', :id => 'show_chart'
