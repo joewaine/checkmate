@@ -16,14 +16,13 @@
 require 'spec_helper'
 
 describe Transaction do
-  let(:transaction) {Transaction.create(date: '2009/03/1989', amount: 89.00, description: 'cash', is_deposit: true)}
+  let(:transaction) {Transaction.create(amount: 89, to: 'cash', is_deposit: true)}
 
   describe '.create' do
-    it 'creates a transaction' do
-      transaction.should be_an_instance_of(Transction)
-      transaction.date.should eq '2009/03/1989'
-      transaction.description.should eq 'cash'
-      transaction.amount.should eq 89.00
+    it 'it has an id' do
+      transaction.to.should eq 'cash'
+      transaction.amount.should eq 89
+      expect(transaction.id).to_not be nil
     end
   end
 end
