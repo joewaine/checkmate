@@ -10,18 +10,9 @@
 #  updated_at :datetime         not null
 #
 
-<<<<<<< HEAD
 FactoryGirl.define do
   factory :account, class: Account do
     name 'Chase Savings'
     balance 20.00
   end
 end
-=======
-# FactoryGirl.define do
-#   factory :account, class: Account do
-#     name 'Chase Savings'
-#     balance 20.00
-#   end
-# end
->>>>>>> 935a11dc0d87974fc02ff710933d24e3e3a61ff0
