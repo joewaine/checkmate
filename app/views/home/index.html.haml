@@ -1,8 +1,5 @@
 #anonymous
   = render(:partial => 'anonymous')
 #form
-= link_to('New Account', new_account_path, :remote => true, :class => 'button tiny radius')
-= link_to('Transfer', transfer_accounts_path, :remote => true, :class => 'button tiny radius')
-
 #accounts
-  = render :partial => 'accounts/accounts'
+  = render(:partial => 'accounts')

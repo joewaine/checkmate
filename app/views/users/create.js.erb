@@ -1,2 +1,6 @@
-$('#anonymous').show()
-$('#form').empty();
+<% if @user.valid? %>
+  $('#form').empty();
+  $('#anonymous').show();
+<% else %>
+  $('#form').empty().append('<%=j render(:partial => 'form') %>');
+<% end %>
