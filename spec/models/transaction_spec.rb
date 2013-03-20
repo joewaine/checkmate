@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # == Schema Information
 #
 # Table name: transactions
@@ -18,7 +18,6 @@ require 'spec_helper'
 describe Transaction do
   let(:transaction){()}
   describe '.create' do
-=======
 require 'spec_helper'
 
 describe Transaction do
@@ -33,4 +32,3 @@ describe Transaction do
     end
   end
 end
->>>>>>> cfb66f8dd6f48f4dce064c390736d791b8c2bc8b

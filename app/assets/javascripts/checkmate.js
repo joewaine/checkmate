@@ -1,33 +1,37 @@
 $(function(){
 
-  $('#show_chart').click(show_chart);
-
+  $('.show_chart').click(show_chart);
 });
+
+
+
 
 function show_chart()
 {
-  var activity = $('#activities').val();
+
+  var data = $(this).data('account-id');
+  var type = $(this).data('type');
 
   $.ajax({
       dataType: 'json',
       type: "get",
-      # url: "/exercises/chart/" + activity
+      url: "/accounts/chart/" + data + "/" + type
   }).done(process_activity);
 
   return false;
 }
 
-function process_activity(exercises)
+function process_activity(transactions)
 {
 
   $('#chart').empty();
 
   new Morris.Line({
   element: 'chart',
-  data: exercises,
-  xkey: 'completed',
-  ykeys: ['value'],
-  labels: ['Value']
+  data: transactions,
+  xkey: 'date',
+  ykeys: ['amount'],
+  labels: ['amount']
   });
 
 }

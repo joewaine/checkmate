@@ -1,13 +1,5 @@
-%table
-  %tr
-    %th Date
-    %th Amount
-    %th Is_deposit
-    %th to
-  - @transactions.each do |transaction|
-    %tr
-      %td= transaction.date
-      %td= transaction.amount
-      %td= transaction.is_deposit
-      %td= transaction.to
-= button_tag 'Chart', :class => 'button radius tiny', :id => 'show_chart'
+= button_tag 'Deposits Chart', :class => 'button radius tiny show_chart', :'data-account-id' => @account.id, :'data-type' => 'deposit'
+= link_to 'Deposits Table', deposits_accounts_path, :remote => true, :class => 'button radius tiny show_table', :'data-type' => 'deposit'
+= button_tag 'Withdraws Chart', :class => 'button radius tiny show_chart', :'data-account-id' => @account.id, :'data-type' => 'withdraw'
+= link_to 'Withdraws Table', withdraws_accounts_path, :remote => true, :class => 'button radius tiny show_table', :'data-type' => 'withdraw'
+#chart

@@ -1,0 +1,10 @@
+%table
+  %tr
+    %th Date
+    %th Amount
+    %th to
+  - @transactions.each do |transaction|
+    %tr
+      %td= transaction.date
+      %td= transaction.amount
+      %td= transaction.to

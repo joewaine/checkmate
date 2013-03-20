@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+Seed File
+
+=======
+>>>>>>> 935a11dc0d87974fc02ff710933d24e3e3a61ff0
 User.delete_all
 Account.delete_all
 Transaction.delete_all

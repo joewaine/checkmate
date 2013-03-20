@@ -13,6 +13,12 @@
 #
 
 class Transaction < ActiveRecord::Base
+  scope :deposits, where(:is_deposit => true)
+  scope :withdraws, where(:is_deposit => false)
+
   attr_accessible :date, :amount, :is_deposit, :to
   belongs_to :account
+
+
+
 end

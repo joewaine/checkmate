@@ -13,7 +13,7 @@
 require 'spec_helper'
 
 describe Account do
-  
+
   let(:account) {Account.create(name: 'Chase Savings', balance: 20.00)}
 
   describe '.create' do
@@ -23,3 +23,4 @@ describe Account do
       account.balance.should eq 20.00
     end
   end
+end
